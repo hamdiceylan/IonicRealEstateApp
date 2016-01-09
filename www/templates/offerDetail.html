@@ -1,0 +1,57 @@
+<ion-view view-title="İlanlar">
+  <ion-content>
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="img/bay.png">
+        <h2>{{offer.UserName}} ({{offer.CompanyName}})</h2>
+        <p>Telefon : {{offer.Phone}}</p>
+        <p>İlan Numarası : {{offer.Id}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="img/4.jpg">
+        <p>
+          {{offer.MoreDetails}}
+        </p>
+      </div>
+      <div class="row">
+        <div class="col col-50">Fiyat</div>
+        <div class="col col-50">: {{offer.Price}} TL</div>
+      </div>
+      <div class="row">
+        <div class="col col-50">MetreKare</div>
+        <div class="col col-50">: {{offer.MeterSquare}}</div>
+      </div>
+      <div class="row">
+        <div class="col col-50">Oda Sayısı</div>
+        <div class="col col-50">: {{offer.Rooms}}</div>
+      </div>
+      <div class="row">
+        <div class="col col-50">Bina Yaşı</div>
+        <div class="col col-50">: {{offer.BuildingAge}}</div>
+      </div>
+      <div class="row">
+        <div class="col col-50">Bulunduğu Kat</div>
+        <div class="col col-50">: 1</div>
+      </div>
+      <div class="row">
+        <div class="col col-50">Kat Sayısı</div>
+        <div class="col col-50">: 3</div>
+      </div>
+      <div class="row">
+        <div class="col col-50">Isıtma</div>
+        <div class="col col-50">: {{offer.Heating}}</div>
+      </div>
+
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Danışman ile Paylaş
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

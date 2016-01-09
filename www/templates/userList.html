@@ -1,0 +1,11 @@
+<ion-view view-title="Emlak Danışmanları">
+  <ion-content>
+    <div ng-repeat="user in users">
+      <a class="item item-avatar" href="#/app/offerList/{{user.Id}}">
+        <img src="img/bay.png">
+        <h2>{{user.Name}} {{user.Surname}} </h2>
+        <p>{{user.Phone}}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
